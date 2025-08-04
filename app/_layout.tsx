@@ -29,6 +29,15 @@ export default function RootLayout() {
           }}
         />
         <Stack.Screen
+          name="spin"
+          options={{
+            title: 'Rolling Dice...',
+            headerShown: false,
+            presentation: 'fullScreenModal',
+            gestureEnabled: false, // Prevent swipe to go back during spinning
+          }}
+        />
+        <Stack.Screen
           name="history"
           options={{
             title: 'Game History',
